@@ -1,0 +1,199 @@
+:root {
+    --orange: #ff7800;
+    --lightcolor: #666;
+    --black: #130f40
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.header {
+    padding: 2rem 7%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+#logo {
+    font-size: 3.5rem;
+    color: rgb(245, 241, 241);
+}
+.icons #menu-bars {
+    color: white;
+    font-size: 4rem;
+}
+.navbar.active {
+    left: 0;
+}
+.navbar {
+    position: absolute;
+    top: 100%;
+    background: black;
+    width: 30rem;
+    height: 100vh;
+    left: -100%;
+    transition: .5s;
+}
+.navbar a {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.background-image {
+    background: url(/image/qk09qita.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-text-background {
+    text-align: center;
+}
+.inner-text-background h2 {
+    color: white;
+    font-size: 90px;
+}
+.inner-text-background p {
+    color: var(--orange);
+    font-size: 50px;
+}
+.inner-text-background h3 {
+    color: white;
+    font-size: 30px;
+}
+.what-we-do {
+    padding: 5rem 7%;
+    background: black;
+}
+.main-we-do {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.inner-we-do {
+    flex: 1 1 45rem;
+}
+.inner-we-do img{
+    width: 40%;
+}
+.inner-we-do h1 {
+    color: white;
+    font-size: 40px;
+}
+.inner-we-do p {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 25px;
+}
+.inner-we-do a {
+    padding: 2rem 4rem;
+    background: var(--orange);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+.our-services {
+    padding: 3rem 7%;
+}
+.our-services h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+.our-services h1 span {
+    color: var(--orange);
+}
+.main-services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.inner-services {
+    flex: 1 1 600px;
+    padding: 2rem 3rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 26px;
+}
+.inner-services:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inner-services .service-icons{
+    width: 50px;
+    height: 50px;
+    background: black;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.inner-services .service-icons i {
+    color: white;
+    font-size: 4.5rem;
+}
+.inner-services p {
+    padding: 0 2rem;
+    font-size: 1.8rem;
+}
+
+.gallery {
+    padding: 3rem 8%;
+}
+
+.gallery h1 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+.gallery h1 span {
+    color: var(--orange)
+}
+.main-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-gallery {
+    flex: 1 1 300px
+}
+.inner-gallery img {
+    width: 100%;
+}
+
+.container {
+    background-color: black;
+}
+
+.footer {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 20px 0;
+    text-align: center;
+    background-color: black;
+}
+.Footer p {
+    color: aliceblue;
+}
